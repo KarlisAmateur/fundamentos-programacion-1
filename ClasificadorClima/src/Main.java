@@ -3,14 +3,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.printf("CLASIFICADOR DE CLIMAA");
+        System.out.printf("CLASIFICADOR DE CLIMA");
         Scanner teclado = new Scanner(System.in);
 
         System.out.printf("Introduzca la temperatura en °C: ");
         double temperaturaC = teclado.nextDouble();
 
         if (temperaturaC <10) {
-            System.out.println("Frío extremoo");
+            System.out.println("Frío extremo");
         } else if (temperaturaC <=20) {
             System.out.println("Clima fresco");
         } else if (temperaturaC <=30) {
