@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.printf("CLASIFICADOR DE CLIMA");
+        System.out.println("CLASIFICADOR DE CLIMA");
         Scanner teclado = new Scanner(System.in);
 
         System.out.printf("Introduzca la temperatura en °C: ");
