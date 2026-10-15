@@ -13,15 +13,14 @@ public class Main {
         }
         System.out.print("Introduzca el piso a donde quiere ir: ");
         int pisoDeseado = teclado.nextInt();
-        while (pisoDeseado <=0){
-            System.out.println("El piso de estancia debe ser mayor a 0");
+        while (pisoDeseado <= 0 || pisoEstancia == pisoDeseado) {
+            if (pisoDeseado <= 0) {
+                System.out.println("El piso deseado debe ser mayor a 0");
+            } else if (pisoEstancia == pisoDeseado) {
+                System.out.println("El piso deseado y de estancia no pueden ser los mismos");
+            }
             System.out.print("Introduzca el piso a donde quiere ir: ");
             pisoDeseado = teclado.nextInt();
-            while (pisoEstancia==pisoDeseado){
-                System.out.println("El piso deseado y de estancia no pueden ser los mismos");
-                System.out.print("Introduzca el piso a donde quiere ir: ");
-                pisoDeseado = teclado.nextInt();
-            }
         }
 
             if (pisoEstancia < pisoDeseado){
